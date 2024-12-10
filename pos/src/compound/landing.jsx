@@ -1,6 +1,7 @@
 import logo from "../images/logo.png";
 import toggle from "../images/list.png";
 import prop from "../images/prop.png";
+import connect from '../images/connect2.png'
 import { TiStopwatch } from "react-icons/ti";
 import gp from "../images/gp.png";
 import star from "../images/star.png";
@@ -66,7 +67,7 @@ function Landing() {
       );
   };
   return (
-    <div style={style.full}>
+    <div style={style.full} className="id">
       <nav style={{ marginTop: "-1%" }}>
         <ul
           style={{
@@ -112,7 +113,7 @@ function Landing() {
         </div>
       </nav>
 
-      <div style={{ background: "black", width: "100%", color: "white" }}>
+      <div style={{ background: "black", width: '100%', color: "white" }}>
         <div>
           <h3
             style={{
@@ -239,9 +240,7 @@ function Landing() {
                     <b>Fast, intuitive platform</b>
                   </h3>
                   <p style={{ width: 320, fontSize: 17 }}>
-                    Innovative multilocation tools, integrations and reports
-                    configured for your unique business—all in one easy-to-use
-                    system.
+                  Advanced multi-location capabilities, seamless integrations, customized reporting tailored to your unique business needs—all within a user-friendly system.
                   </p>
                 </li>
                 <li style={{ marginRight: 60 }}>
@@ -250,9 +249,7 @@ function Landing() {
                     <b>Industry-leading insights</b>
                   </h3>
                   <p style={{ width: 320, fontSize: 17 }}>
-                    Performance-boosting insights so you know what to do next.
-                    Real-time reporting and visibility across your entire
-                    operation.
+                  Actionable insights to drive performance improvements. Instant reporting and comprehensive visibility across your entire operation.
                   </p>
                 </li>
                 <li>
@@ -262,11 +259,27 @@ function Landing() {
                     <b>Personalized support</b>
                   </h3>
                   <p style={{ width: 320, fontSize: 17 }}>
-                    Whiteglove onboarding and support from industry experts who
-                    know what it takes to succeed in your market..
+                  Premium onboarding and expert support from industry professionals who understand your market’s success factors.
                   </p>
                 </li>
               </ul>
+            </div>
+            <div style={{background:'#ffc801',height:300}}>
+              <div >
+                <h1 style={{paddingTop:35,paddingLeft:55,fontSize:25}}>Connect to FintechGie</h1>
+              </div>
+              <div style={{width:550,marginLeft:55,marginTop:20}}>
+                <h3>Our state-of-the-art Point of Sale systems are designed to revolutionize your business operations. our POS solutions offer unparalleled efficiency, reliability, and ease of use</h3>
+              </div>
+              <div style={{marginLeft:55,marginTop:35}}>
+
+              <Button variant="contained" style={{color:'white',borderColor:'black',borderRadius:50,padding:"20px 90px",background:'#2a454e'}}>Connect</Button>
+              <img
+                  src={connect}
+                  style={{ marginTop: -270, marginLeft: 700, width: 320 }}
+                ></img>
+              </div>
+              
             </div>
             <h1 style={{ marginTop: 40, color: "#c89b78" }}>
               <center>FintechGie Growing Community</center>
@@ -492,7 +505,8 @@ function Landing() {
 const style = {
   full: {
     fontFamily: "Poppins",
-    fontSize: "14px",
+    fontSize: 14,
+    
   },
   core: {
     marginRight: "5.5%",
@@ -532,7 +546,7 @@ const style = {
     color: "#c89b78",
   },
   headernav: {
-    width: "01%",
+    width: 13.5,
     marginTop: "2%",
   },
   toggle: {
